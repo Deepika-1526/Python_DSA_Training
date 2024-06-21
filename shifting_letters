@@ -1,0 +1,32 @@
+'''def caesar_decrypt(ciphertext, shift):
+    decrypted_text = []
+    for char in ciphertext:
+        if char.isalpha():
+            shift_amount = shift % 26
+            new_char = ord(char) - shift_amount
+            if char.islower() and new_char < ord('a'):
+                new_char += 26
+            decrypted_text.append(chr(new_char))
+        else:
+            decrypted_text.append(char)
+    return ''.join(decrypted_text)
+
+
+ciphertext = "bvec"
+shift = 4
+print(caesar_decrypt(ciphertext, shift))'''
+
+a='bvec'
+b=4
+c=b%26
+d=''
+for i in a:
+    if((ord(i)-c)>=97):
+        d=d+(chr(ord(i)-c))
+    else:
+        d=d+(chr(ord(i)-c+26))
+print(d)
+
+
+
+  

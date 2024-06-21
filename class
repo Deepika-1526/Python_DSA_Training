@@ -1,0 +1,12 @@
+class qwer:
+    def __init__(self,v,u):
+        self.a=u 
+        self.b=v 
+    def asd(self,x):
+        print("hello",self.a+x,self.b)
+        y.zxc(x+10)
+    def zxc(self,y):
+        print("hi",self.b+y,self.a)
+x= qwer(40,10)
+y= qwer(50,10)
+x.asd(60)
